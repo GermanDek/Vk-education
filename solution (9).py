@@ -1,11 +1,3 @@
-#coding: utf-8
-low = int(input())
-high = int(input())
-between = True
-
-while line := input(): 
-
-         if between:
-             between = low <= int(line) <= high
-
-print(between)
+input_string = input().lower()
+unique_chars = set(input_string) - {' '}
+print(' '.join(sorted(list(unique_chars))))
